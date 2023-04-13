@@ -1,4 +1,4 @@
-## visited 
+## visited (In the web development phase...)
 > Netlify: https://herophumiphat-product-nextjs-ts-ssg.netlify.app/<br>
 > Vercel: https://next-js-typescript-tailwind-css-14f5.vercel.app/
 
