@@ -43,7 +43,7 @@ const ShowProducts: NextPage<productProps> = ({ products }) => {
                 <title>users | HeroPhumiphat</title>
             </Head>
             <main className='w-full px-5 py-5'>
-                <div className='w-full bg-blue-300 h-20'>
+                <div className='w-full bg-green-300 h-20'>
                     <div className='flex'>
                         <p>title: </p>
                         <input type="text" />
