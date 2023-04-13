@@ -1,3 +1,12 @@
+## visited 
+> Netlify: https://herophumiphat-product-nextjs-ts-ssg.netlify.app/<br>
+> Vercel: https://next-js-typescript-tailwind-css-14f5.vercel.app/
+
+
+<br>
+<br>
+<br>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
