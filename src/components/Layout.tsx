@@ -8,8 +8,12 @@ interface LayoutProps {
 export default function Layout ({ children }: LayoutProps) {
     return (
         <>
-            <Header />
-            {children}
+            <div className='z-40'>
+                <Header />
+            </div>
+            <div className='z-20 h-ful'>
+                {children}
+            </div>
         </>
     )
 }
