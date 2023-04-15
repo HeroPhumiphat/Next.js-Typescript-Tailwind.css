@@ -1,5 +1,5 @@
 ## visited (In the web development phase...)
-> Netlify: https://herophumiphat-product-nextjs-ts-ssg.netlify.app/<br>
+> Netlify: herophumiphat-product-nextjs-ts-ssg.netlify.app (bug)/<br>
 > Vercel: https://next-js-typescript-tailwind-css.vercel.app/
 
 
