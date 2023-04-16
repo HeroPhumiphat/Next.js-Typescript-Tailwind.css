@@ -27,7 +27,7 @@ export default function Header() {
                         <Link href='/' className={urlPath === '/' ? 'font-bold' : ''}>Home</Link>
                     </li>
                     <li>
-                        <Link href='/show-user' className={urlPath === '/show-user' ? 'font-bold' : ''}>Users</Link>
+                        <Link href='/users' className={urlPath === '/users' ? 'font-bold' : ''}>Users</Link>
                     </li>
                     <li>
                         <Link href='/products' className={urlPath === '/products' || urlPath === '/products/[id]' ? 'font-bold' : ''}>products</Link>

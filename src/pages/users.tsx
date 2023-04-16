@@ -31,7 +31,7 @@ const ShowUser: NextPage<UserProps> = ({ users }) => {
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3x:grid-cols-6 gap-3 justify-items-center items-center mb-5'>
                         {
                             users.map((user) => (
-                                <Link href={'/products/' + user.id} key={user.id}>
+                                <Link href={'/users/#'} key={user.id}>
                                     <div className='text-center border mx-1 py-4 w-[270px] rounded-sm hover:cursor-pointer hover:scale-110 z-10 hover:z-20 bg-white transition delay-150 duration-300 ease-in-out' style={{boxShadow: '0 0 12px #ccc '}}>
                                         <div className='flex items-center justify-center'>
                                             <div className='bg-black px-4 py-3 w-fit h-fit rounded-full my-2'>
