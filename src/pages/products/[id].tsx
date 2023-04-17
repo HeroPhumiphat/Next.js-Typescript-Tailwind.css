@@ -38,7 +38,7 @@ const ProductDetial= ({product}: Props) => {
                     <Link href='/products' className='hover:underline underline-offset-2'> \ Products</Link>
                     <Link href={'/products/' + product.id} className='font-bold'> \ {product.title}</Link>
                 </div>
-                <div className='flex justify-center items-center pt-16' ref={divRef}>
+                <div className='flex justify-center items-center pt-16 pl-5' ref={divRef}>
                     <div className='flex flex-wrap space-x-7'>
                         <div className='w-[360px] h-[270px] rounded-sm' style={{backgroundImage:  `url(${product.thumbnail})`, backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
                         <div className='w-[360px] pl-4'>
