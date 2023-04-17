@@ -50,17 +50,17 @@ const ShowProducts: NextPage<productProps> = ({ products }) => {
                     </div>
                 </div>
                 <div className='flex justify-center mt-7'>
-                    <div className='grid grid-cols-2 min-[520px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-1 gap-y-5 md:gap-x-8 md:gap-y-7 justify-items-center items-center'>
+                    <div className='grid grid-cols-2 min-[520px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 md:gap-x-8 gap-y-7 justify-items-center items-center'>
                     {
                         products
                             .filter(product => product.title.toLowerCase().includes(search.toLowerCase()))
                             .map((product) => (
                                 <Link href={'/products/' + product.id} key={product.id}>
-                                    <div className='h-auto py-2'>
-                                        <div className='text-center border md:w-[210px] h-[180px] rounded-md cursor-pointer' style={{boxShadow: '0 0 5px #aaa, 0 0 8px #e3e3e3', backgroundImage: `url(${product.thumbnail})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
+                                    <div className='w-[160px] h-auto py-2'>
+                                        <div className='text-center border mx-1 w-full h-[180px] rounded-md cursor-pointer' style={{boxShadow: '0 0 5px #aaa, 0 0 8px #e3e3e3', backgroundImage: `url(${product.thumbnail})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
                                         </div>
                                         <div className='flex justify-between items-end px-1 mt-2'>
-                                            <div>
+                                            <div className=''>
                                                 <p className='hover:cursor-pointe hover:underline'>{product.title.length > 8 ? `${product.title.substring(0, 8)}...` : product.title}</p>
                                                 <div className='flex'>
                                                     <p>${product.price}</p>
