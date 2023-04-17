@@ -7,7 +7,6 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
     const urlPath = useRouter().pathname;
-    // console.log(urlPath)
 
     return (
         <nav className='w-full flex justify-between items-center px-4 border border-b' style={{boxShadow: '0 0 5px #c8c8c8'}}>
