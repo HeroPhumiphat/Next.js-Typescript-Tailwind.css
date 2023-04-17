@@ -61,7 +61,7 @@ const ShowProducts: NextPage<productProps> = ({ products }) => {
                                         </div>
                                         <div className='flex justify-between items-end px-1 mt-2'>
                                             <div>
-                                                <p className='hover:cursor-pointe hover:underline'>{product.title.length > 12 ? `${product.title.substring(0, 12)}...` : product.title}</p>
+                                                <p className='hover:cursor-pointe hover:underline'>{product.title.length > 8 ? `${product.title.substring(0, 8)}...` : product.title}</p>
                                                 <div className='flex'>
                                                     <p>${product.price}</p>
                                                     <div className='relative ml-2 bg-red-400 rounded-full text-xs flex items-center justify-end px-1 pl-4'>
@@ -75,7 +75,7 @@ const ShowProducts: NextPage<productProps> = ({ products }) => {
                                                     <FontAwesomeIcon icon={faStar} className='text-amber-400 mr-1 text-sm' />
                                                     <p className=''>{product.rating.toFixed(2)}</p>
                                                 </div>
-                                                <p>(stock: {product.stock})</p>
+                                                <p className='text-sm text-end'>({product.stock})</p>
                                             </div>
                                         </div>
                                     </div>
