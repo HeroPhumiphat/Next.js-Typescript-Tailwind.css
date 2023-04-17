@@ -8,8 +8,8 @@ interface UserData {
 
 export const getUsers = async (): Promise<UserData[]> => {
     try {
-        const res = await axios.get('https://jsonplaceholder.typicode.com/users');
-        return res.data
+        const res = await axios.get('https://dummyjson.com/users');
+        return res.data.users
     } catch (err) {
         throw new Error('ไม่สามารถดึงข้อมูลได้');
     }
