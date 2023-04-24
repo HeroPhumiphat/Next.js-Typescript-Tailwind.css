@@ -92,7 +92,7 @@ const UserDetail = ({user, todo}: Props) => {
 export default UserDetail;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const res = await axios.get('https://dummyjson.com/users/?limit=100');
+    const res = await axios.get('https://dummyjson.com/users/?limit=50');
     const paths = res.data.users.map((user: User) => {
         return {
             params: { id: String(user.id)}

@@ -68,7 +68,7 @@ const ProductDetial= ({product}: Props) => {
 export default ProductDetial;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const res = await axios.get('https://dummyjson.com/products/?limit=100');
+    const res = await axios.get('https://dummyjson.com/products/?limit=50');
     const paths = res.data.products.map((product: Product) => {
         return { 
             params: { id: String(product.id)}

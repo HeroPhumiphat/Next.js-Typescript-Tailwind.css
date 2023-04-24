@@ -16,7 +16,7 @@ interface ProductData {
 
 export const getProducts = async (): Promise<ProductData[]> => {
     try {
-        const res = await axios.get('https://dummyjson.com/products/?limit=100')
+        const res = await axios.get('https://dummyjson.com/products/?limit=50')
         // console.log(res.data.products)
         return res.data.products
     } catch (err) {

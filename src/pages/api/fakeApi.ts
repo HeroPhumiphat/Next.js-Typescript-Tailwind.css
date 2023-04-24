@@ -10,7 +10,7 @@ interface UserData {
 
 export const getUsers = async (): Promise<UserData[]> => {
     try {
-        const res = await axios.get('https://dummyjson.com/users/?limit=100');
+        const res = await axios.get('https://dummyjson.com/users/?limit=50');
         return res.data.users
     } catch (err) {
         throw new Error('ไม่สามารถดึงข้อมูลได้');
